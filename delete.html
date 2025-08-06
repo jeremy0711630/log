@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account</title>
+    <link rel="stylesheet" href="delete.css">
+</head>
+<body>
+
+    <video autoplay loop muted id="bg-video">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <div class="login-container">
+        <h2>Delete your account</h2>
+        <form id="deleteform"> 
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit" class="animated-button">Delete</button>
+        </form>
+    
+        <p>Return to admin<a href="admin.html">    Return</a></p>
+    </div>
+    <div class="dashboard-box">
+        <h2>Registered Users</h2>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody id="user-table-body">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="delete.js"></script>
+</body>
+</html>

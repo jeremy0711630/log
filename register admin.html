@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    
+    <video autoplay loop muted id="bg-video">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <div class="login-box">
+        <h2>REGISTER</h2>
+        <form id="Registerform">
+            <div class="input-box">
+                <input type="text" placeholder="Username" required id="username">
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required id="password">
+            </div>
+            <div class="input-box">
+                <select id="role" required>
+                    <option value="#" disabled selected>Select Role</option>
+                    <option value="admin">Admin</option>
+                    <option value="guest">Guest</option>
+                </select>
+            </div>
+
+            <button type="submit" class="neon-btn">Register</button>
+
+            <div class="links">
+                <p>Already have an account?<a href="login admin.html">Login</a></p>
+                <p>back to home page <a href="admin.html">Back</a></p>
+                
+            </div>
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

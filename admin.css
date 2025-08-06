@@ -1,0 +1,114 @@
+body {
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-size: 15px;
+}
+.header {
+    background-color: rgb(30, 51, 51);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+    height: 80px;
+}
+.logo {
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #3a665e;
+    color: white;
+    position: fixed;
+    padding: 20px;
+    top: 10%;
+    left: -250px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.sidebar a:hover {
+    background: #58f283;
+}
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1100;
+}
+.content {
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    transition: margin-left 0.3s ease-in-out;
+    margin-top: 100px; 
+}
+
+
+.body-sidebar-active .content {
+    margin-left: 220px;
+}
+.content button {
+    font-size: 40px;
+    border-radius: 5px;
+    background-color: #3a665e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: #58f283;
+}
+
+
+table {
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+.scroll-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: white;
+}
